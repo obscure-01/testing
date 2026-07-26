@@ -1,0 +1,225 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 800" width="1600" height="800" role="img" aria-labelledby="svg-title svg-desc">
+  <title id="svg-title">Engineering Ecosystem</title>
+  <desc id="svg-desc">A visual architecture diagram of a modern full-stack engineering ecosystem, featuring interconnected nodes for Frontend, Backend, Database, Cloud, Languages, Dev Tools, and AI/ML.</desc>
+  <defs>
+    <radialGradient id="bg-gradient" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#0f1628" />
+      <stop offset="100%" stop-color="#080c18" />
+    </radialGradient>
+    
+    <symbol id="icon-react" viewBox="0 0 24 24"><path fill="#61DAFB" d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.41 0-.783.093-1.106.278-1.375.793-1.683 3.264-.973 6.365C1.98 8.917 0 10.42 0 12.004c0 1.59 1.99 3.097 5.043 4.03-.704 3.113-.39 5.588.988 6.38.32.187.69.275 1.102.275 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.41 0 .783-.09 1.106-.275 1.374-.792 1.683-3.263.973-6.365C22.02 15.096 24 13.59 24 12.004c0-1.59-1.99-3.097-5.043-4.032.704-3.11.39-5.587-.988-6.38-.318-.184-.688-.277-1.092-.278zm-.005 1.09v.006c.225 0 .406.044.558.127.666.382.955 1.835.73 3.704-.054.46-.142.945-.25 1.44-.96-.236-2.006-.417-3.107-.534-.66-.905-1.345-1.727-2.035-2.447 1.592-1.48 3.087-2.292 4.105-2.295zm-9.77.02c1.012 0 2.514.808 4.11 2.28-.686.72-1.37 1.537-2.02 2.442-1.107.117-2.154.298-3.113.538-.112-.49-.195-.964-.254-1.42-.23-1.868.054-3.32.714-3.707.19-.09.4-.127.563-.132zm4.882 3.05c.455.468.91.992 1.36 1.564-.44-.02-.89-.034-1.345-.034-.46 0-.915.01-1.36.034.44-.572.895-1.096 1.345-1.565zM12 8.1c.74 0 1.477.034 2.202.093.406.582.802 1.203 1.183 1.86.372.64.71 1.29 1.018 1.946-.308.655-.646 1.31-1.013 1.95-.38.66-.773 1.288-1.18 1.87-.728.063-1.466.098-2.21.098-.74 0-1.477-.035-2.202-.093-.406-.582-.802-1.204-1.183-1.86-.372-.64-.71-1.29-1.018-1.946.303-.657.646-1.313 1.013-1.954.38-.66.773-1.286 1.18-1.868.728-.064 1.466-.098 2.21-.098zm-3.635.254c-.24.377-.48.763-.704 1.16-.225.39-.435.782-.635 1.174-.265-.656-.49-1.31-.676-1.947.64-.15 1.315-.283 2.015-.386zm7.26 0c.695.103 1.365.23 2.006.387-.18.632-.405 1.282-.66 1.933-.2-.39-.41-.783-.64-1.174-.225-.392-.465-.774-.705-1.146zm3.063.675c.484.15.944.317 1.375.498 1.732.74 2.852 1.708 2.852 2.476-.005.768-1.125 1.74-2.857 2.475-.42.18-.88.342-1.355.493-.28-.958-.646-1.956-1.1-2.98.45-1.017.81-2.01 1.085-2.964zm-13.395.004c.278.96.645 1.957 1.1 2.98-.45 1.017-.812 2.01-1.086 2.964-.484-.15-.944-.318-1.37-.5-1.732-.737-2.852-1.706-2.852-2.474 0-.768 1.12-1.742 2.852-2.476.42-.18.88-.342 1.356-.494zm11.678 4.28c.265.657.49 1.312.676 1.948-.64.157-1.316.29-2.016.39.24-.375.48-.762.705-1.158.225-.39.435-.788.636-1.18zm-9.945.02c.2.392.41.783.64 1.175.23.39.465.772.705 1.143-.695-.102-1.365-.23-2.006-.386.18-.63.406-1.282.66-1.933zM17.92 16.32c.112.493.2.968.254 1.423.23 1.868-.054 3.32-.714 3.708-.147.09-.338.128-.563.128-1.012 0-2.514-.807-4.11-2.28.686-.72 1.37-1.536 2.02-2.44 1.107-.118 2.154-.3 3.113-.54zm-11.83.01c.96.234 2.006.415 3.107.532.66.905 1.345 1.727 2.035 2.446-1.595 1.483-3.092 2.295-4.11 2.295-.22-.005-.406-.05-.553-.132-.666-.38-.955-1.834-.73-3.703.054-.46.142-.944.25-1.438zm4.56.64c.44.02.89.034 1.345.034.46 0 .915-.01 1.36-.034-.44.572-.895 1.095-1.345 1.565-.455-.47-.91-.993-1.36-1.565z" /></symbol>
+    <symbol id="icon-node" viewBox="0 0 24 24"><path fill="#5FA04E" d="M11.998,24c-0.321,0-0.641-0.084-0.922-0.247l-2.936-1.737c-0.438-0.245-0.224-0.332-0.08-0.383 c0.585-0.203,0.703-0.25,1.328-0.604c0.065-0.037,0.151-0.023,0.218,0.017l2.256,1.339c0.082,0.045,0.197,0.045,0.272,0l8.795-5.076 c0.082-0.047,0.134-0.141,0.134-0.238V6.921c0-0.099-0.053-0.192-0.137-0.242l-8.791-5.072c-0.081-0.047-0.189-0.047-0.271,0 L3.075,6.68C2.99,6.729,2.936,6.825,2.936,6.921v10.15c0,0.097,0.054,0.189,0.139,0.235l2.409,1.392 c1.307,0.654,2.108-0.116,2.108-0.89V7.787c0-0.142,0.114-0.253,0.256-0.253h1.115c0.139,0,0.255,0.112,0.255,0.253v10.021 c0,1.745-0.95,2.745-2.604,2.745c-0.508,0-0.909,0-2.026-0.551L2.28,18.675c-0.57-0.329-0.922-0.945-0.922-1.604V6.921 c0-0.659,0.353-1.275,0.922-1.603l8.795-5.082c0.557-0.315,1.296-0.315,1.848,0l8.794,5.082c0.57,0.329,0.924,0.944,0.924,1.603 v10.15c0,0.659-0.354,1.273-0.924,1.604l-8.794,5.078C12.643,23.916,12.324,24,11.998,24z M19.099,13.993 c0-1.9-1.284-2.406-3.987-2.763c-2.731-0.361-3.009-0.548-3.009-1.187c0-0.528,0.235-1.233,2.258-1.233 c1.807,0,2.473,0.389,2.747,1.607c0.024,0.115,0.129,0.199,0.247,0.199h1.141c0.071,0,0.138-0.031,0.186-0.081 c0.048-0.054,0.074-0.123,0.067-0.196c-0.177-2.098-1.571-3.076-4.388-3.076c-2.508,0-4.004,1.058-4.004,2.833 c0,1.925,1.488,2.457,3.895,2.695c2.88,0.282,3.103,0.703,3.103,1.269c0,0.983-0.789,1.402-2.642,1.402 c-2.327,0-2.839-0.584-3.011-1.742c-0.02-0.124-0.126-0.215-0.253-0.215h-1.137c-0.141,0-0.254,0.112-0.254,0.253 c0,1.482,0.806,3.248,4.655,3.248C17.501,17.007,19.099,15.91,19.099,13.993z" /></symbol>
+    <symbol id="icon-postgres" viewBox="0 0 432.071 445.383"><g style="fill-rule:nonzero;clip-rule:nonzero;fill:none;stroke:#FFFFFF;stroke-width:12.4651;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;"><path style="fill:#000000;stroke:#000000;stroke-width:37.3953;stroke-linecap:butt;stroke-linejoin:miter;" d="M323.205,324.227c2.833-23.601,1.984-27.062,19.563-23.239l4.463,0.392c13.517,0.615,31.199-2.174,41.587-7c22.362-10.376,35.622-27.7,13.572-23.148c-50.297,10.376-53.755-6.655-53.755-6.655c53.111-78.803,75.313-178.836,56.149-203.322 C352.514-5.534,262.036,26.049,260.522,26.869l-0.482,0.089c-9.938-2.062-21.06-3.294-33.554-3.496c-22.761-0.374-40.032,5.967-53.133,15.904c0,0-161.408-66.498-153.899,83.628c1.597,31.936,45.777,241.655,98.47,178.31 c19.259-23.163,37.871-42.748,37.871-42.748c9.242,6.14,20.307,9.272,31.912,8.147l0.897-0.765c-0.281,2.876-0.157,5.689,0.359,9.019c-13.572,15.167-9.584,17.83-36.723,23.416c-27.457,5.659-11.326,15.734-0.797,18.367c12.768,3.193,42.305,7.716,62.268-20.224 l-0.795,3.188c5.325,4.26,4.965,30.619,5.72,49.452c0.756,18.834,2.017,36.409,5.856,46.771c3.839,10.36,8.369,37.05,44.036,29.406c29.809-6.388,52.6-15.582,54.677-101.107"/><path style="fill:#336791;stroke:none;" d="M402.395,271.23c-50.302,10.376-53.76-6.655-53.76-6.655c53.111-78.808,75.313-178.843,56.153-203.326c-52.27-66.785-142.752-35.2-144.262-34.38l-0.486,0.087c-9.938-2.063-21.06-3.292-33.56-3.496c-22.761-0.373-40.026,5.967-53.127,15.902 c0,0-161.411-66.495-153.904,83.63c1.597,31.938,45.776,241.657,98.471,178.312c19.26-23.163,37.869-42.748,37.869-42.748c9.243,6.14,20.308,9.272,31.908,8.147l0.901-0.765c-0.28,2.876-0.152,5.689,0.361,9.019c-13.575,15.167-9.586,17.83-36.723,23.416 c-27.459,5.659-11.328,15.734-0.796,18.367c12.768,3.193,42.307,7.716,62.266-20.224l-0.796,3.188c5.319,4.26,9.054,27.711,8.428,48.969c-0.626,21.259-1.044,35.854,3.147,47.254c4.191,11.4,8.368,37.05,44.042,29.406c29.809-6.388,45.256-22.942,47.405-50.555 c1.525-19.631,4.976-16.729,5.194-34.28l2.768-8.309c3.192-26.611,0.507-35.196,18.872-31.203l4.463,0.392c13.517,0.615,31.208-2.174,41.591-7c22.358-10.376,35.618-27.7,13.573-23.148z"/><path d="M215.866,286.484c-1.385,49.516,0.348,99.377,5.193,111.495c4.848,12.118,15.223,35.688,50.9,28.045c29.806-6.39,40.651-18.756,45.357-46.051c3.466-20.082,10.148-75.854,11.005-87.281" style="fill:#000000"/><path d="M173.104,38.256c0,0-161.521-66.016-154.012,84.109c1.597,31.938,45.779,241.664,98.473,178.316c19.256-23.166,36.671-41.335,36.671-41.335" style="fill:#000000"/><path d="M260.349,26.207c-5.591,1.753,89.848-34.889,144.087,34.417c19.159,24.484-3.043,124.519-56.153,203.329" style="fill:#000000"/><path style="fill:#000000;stroke-linejoin:bevel;" d="M348.282,263.953c0,0,3.461,17.036,53.764,6.653c22.04-4.552,8.776,12.774-13.577,23.155c-18.345,8.514-59.474,10.696-60.146-1.069c-1.729-30.355,21.647-21.133,19.96-28.739c-1.525-6.85-11.979-13.573-18.894-30.338 c-6.037-14.633-82.796-126.849,21.287-110.183c3.813-0.789-27.146-99.002-124.553-100.599c-97.385-1.597-94.19,119.762-94.19,119.762"/><path d="M188.604,274.334c-13.577,15.166-9.584,17.829-36.723,23.417c-27.459,5.66-11.326,15.733-0.797,18.365c12.768,3.195,42.307,7.718,62.266-20.229c6.078-8.509-0.036-22.086-8.385-25.547c-4.034-1.671-9.428-3.765-16.361,3.994z" style="fill:#000000"/><path d="M187.715,274.069c-1.368-8.917,2.93-19.528,7.536-31.942c6.922-18.626,22.893-37.255,10.117-96.339c-9.523-44.029-73.396-9.163-73.436-3.193c-0.039,5.968,2.889,30.26-1.067,58.548c-5.162,36.913,23.488,68.132,56.479,64.938" style="fill:#000000"/><path style="fill:#FFFFFF;stroke-width:4.155;stroke-linecap:butt;stroke-linejoin:miter;" d="M172.517,141.7c-0.288,2.039,3.733,7.48,8.976,8.207c5.234,0.73,9.714-3.522,9.998-5.559c0.284-2.039-3.732-4.285-8.977-5.015c-5.237-0.731-9.719,0.333-9.996,2.367z"/><path style="fill:#FFFFFF;stroke-width:2.0775;stroke-linecap:butt;stroke-linejoin:miter;" d="M331.941,137.543c0.284,2.039-3.732,7.48-8.976,8.207c-5.238,0.73-9.718-3.522-10.005-5.559c-0.277-2.039,3.74-4.285,8.979-5.015c5.239-0.73,9.718,0.333,10.002,2.368z"/><path d="M350.676,123.432c0.863,15.994-3.445,26.888-3.988,43.914c-0.804,24.748,11.799,53.074-7.191,81.435" style="fill:#000000"/><path style="fill:#000000;stroke-width:3;" d="M0,60.232"/></g></symbol>
+    <symbol id="icon-vercel" viewBox="0 0 24 24"><path fill="#FFFFFF" d="m12 1.608 12 20.784H0Z" /></symbol>
+    <symbol id="icon-java" viewBox="0 0 300 550"><path style="fill:#5382A1;" d="M285.104,430.945h-2.038v-1.14h5.486v1.14h-2.024v5.688h-1.424V430.945z M296.046,431.242h-0.032 l-2.019,5.392h-0.924l-2.006-5.392h-0.025v5.392h-1.342v-6.828h1.975l1.86,4.835l1.854-4.835h1.968v6.828h-1.31V431.242z"/><path style="fill:#5382A1;" d="M102.681,291.324c0,0-14.178,8.245,10.09,11.035c29.4,3.354,44.426,2.873,76.825-3.259 c0,0,8.518,5.341,20.414,9.967C137.38,340.195,45.634,307.264,102.681,291.324"/><path style="fill:#5382A1;" d="M93.806,250.704c0,0-15.902,11.771,8.384,14.283c31.406,3.24,56.208,3.505,99.125-4.759 c0,0,5.936,6.018,15.27,9.309C128.771,295.215,30.962,271.562,93.806,250.704"/><path style="fill:#F8981D;" d="M168.625,181.799c17.896,20.604-4.702,39.145-4.702,39.145s45.441-23.458,24.572-52.833 c-19.491-27.394-34.438-41.005,46.479-87.934C234.974,80.177,107.961,111.899,168.625,181.799"/><path style="fill:#5382A1;" d="M264.684,321.369c0,0,10.492,8.645-11.555,15.333c-41.923,12.7-174.488,16.535-211.314,0.506 c-13.238-5.759,11.587-13.751,19.396-15.428c8.144-1.766,12.798-1.437,12.798-1.437c-14.722-10.371-95.157,20.364-40.857,29.166 C181.236,373.524,303.095,338.695,264.684,321.369"/><path style="fill:#5382A1;" d="M109.499,208.617c0,0-67.431,16.016-23.879,21.832c18.389,2.462,55.047,1.905,89.193-0.956 c27.906-2.354,55.927-7.359,55.927-7.359s-9.84,4.214-16.959,9.075c-68.475,18.009-200.756,9.631-162.674-8.79 C83.313,206.851,109.499,208.617,109.499,208.617"/><path style="fill:#5382A1;" d="M230.462,276.231c69.608-36.171,37.424-70.931,14.96-66.248c-5.506,1.146-7.961,2.139-7.961,2.139 s2.044-3.202,5.948-4.588c44.441-15.624,78.619,46.081-14.346,70.52C229.063,278.055,230.14,277.092,230.462,276.231"/><path style="fill:#F8981D;" d="M188.495,4.399c0,0,38.55,38.563-36.563,97.862c-60.233,47.568-13.735,74.69-0.025,105.678 c-35.159-31.722-60.961-59.647-43.651-85.637C133.663,84.151,204.049,65.654,188.495,4.399"/><path style="fill:#5382A1;" d="M116.339,374.246c66.815,4.277,169.417-2.373,171.847-33.988c0,0-4.671,11.985-55.219,21.503 c-57.028,10.732-127.364,9.479-169.081,2.601C63.887,364.361,72.426,371.43,116.339,374.246"/><path style="fill:#5382A1;" d="M105.389,495.048c-6.303,5.467-12.96,8.536-18.934,8.536c-8.527,0-13.134-5.113-13.134-13.314 c0-8.871,4.936-15.357,24.739-15.357h7.328V495.048 M122.781,514.671v-60.742c0-15.517-8.85-25.756-30.188-25.756 c-12.457,0-23.369,3.076-32.238,6.999l2.56,10.752c6.983-2.563,16.022-4.949,24.894-4.949c12.292,0,17.58,4.949,17.58,15.181v7.677 h-6.135c-29.865,0-43.337,11.593-43.337,28.994c0,15.017,8.878,23.553,25.594,23.553c10.745,0,18.766-4.436,26.264-10.928 l1.361,9.22H122.781z"/><path style="fill:#5382A1;" d="M180.825,514.671h-21.692l-26.106-84.96h18.943l16.199,52.2l3.601,15.699 c8.195-22.698,13.991-45.726,16.89-67.899h18.427C202.15,457.688,193.266,488.396,180.825,514.671"/><path style="fill:#5382A1;" d="M264.038,495.048c-6.315,5.467-12.984,8.536-18.958,8.536c-8.512,0-13.131-5.113-13.131-13.314 c0-8.871,4.948-15.357,24.749-15.357h7.34V495.048 M281.428,514.671v-60.742c0-15.517-8.872-25.756-30.185-25.756 c-12.466,0-23.382,3.076-32.247,6.999l2.556,10.752c6.986-2.563,16.042-4.949,24.907-4.949c12.283,0,17.579,4.949,17.579,15.181 v7.677h-6.145c-29.874,0-43.34,11.593-43.34,28.994c0,15.017,8.871,23.553,25.584,23.553c10.751,0,18.769-4.436,26.28-10.928 l1.366,9.22H281.428z"/><path style="fill:#5382A1;" d="M36.847,529.099c-4.958,7.239-12.966,12.966-21.733,16.206l-8.587-10.105 c6.673-3.424,12.396-8.954,15.055-14.105c2.3-4.581,3.252-10.485,3.252-24.604v-96.995h18.478v95.666 C43.311,514.038,41.802,521.663,36.847,529.099"/></symbol>
+    <symbol id="icon-git" viewBox="0 0 24 24"><path fill="#F05032" d="M13.09 23.549a1.54 1.54 0 0 1-2.18 0L.451 13.089a1.54 1.54 0 0 1 0-2.179l7.191-7.19 2.733 2.733a1.85 1.85 0 0 0 .964 2.326v6.66a1.849 1.849 0 1 0 1.54 0V8.957l2.508 2.508a1.85 1.85 0 1 0 1.09-1.09l-2.634-2.634a1.85 1.85 0 0 0-2.378-2.377L8.73 2.63 10.91.451a1.54 1.54 0 0 1 2.179 0l10.459 10.46a1.54 1.54 0 0 1 0 2.179z" /></symbol>
+    <symbol id="icon-python" viewBox="0.21 -0.077 110 110"><path fill="#3776AB" d="M55.023-0.077c-25.971,0-26.25,10.081-26.25,12.156c0,3.148,0,12.594,0,12.594h26.75v3.781 c0,0-27.852,0-37.375,0c-7.949,0-17.938,4.833-17.938,26.25c0,19.673,7.792,27.281,15.656,27.281c2.335,0,9.344,0,9.344,0 s0-9.765,0-13.125c0-5.491,2.721-15.656,15.406-15.656c15.91,0,19.971,0,26.531,0c3.902,0,14.906-1.696,14.906-14.406 c0-13.452,0-17.89,0-24.219C82.054,11.426,81.515-0.077,55.023-0.077z M40.273,8.392c2.662,0,4.813,2.15,4.813,4.813 c0,2.661-2.151,4.813-4.813,4.813s-4.813-2.151-4.813-4.813C35.46,10.542,37.611,8.392,40.273,8.392z"/><path fill="#FFD343" d="M55.397,109.923c25.959,0,26.282-10.271,26.282-12.156c0-3.148,0-12.594,0-12.594H54.897v-3.781 c0,0,28.032,0,37.375,0c8.009,0,17.938-4.954,17.938-26.25c0-23.322-10.538-27.281-15.656-27.281c-2.336,0-9.344,0-9.344,0 s0,10.216,0,13.125c0,5.491-2.631,15.656-15.406,15.656c-15.91,0-19.476,0-26.532,0c-3.892,0-14.906,1.896-14.906,14.406 c0,14.475,0,18.265,0,24.219C28.366,100.497,31.562,109.923,55.397,109.923z M70.148,101.454c-2.662,0-4.813-2.151-4.813-4.813 s2.15-4.813,4.813-4.813c2.661,0,4.813,2.151,4.813,4.813S72.809,101.454,70.148,101.454z"/></symbol>
+  </defs>
+  <style>
+    /* Baseline Static Styles */
+    rect, circle, line, text { vector-effect: non-scaling-stroke; }
+    .connection { stroke: #1e293b; stroke-width: 0.75; fill: none; stroke-linecap: round; opacity: 0.5; }
+    .anchor-halo { fill: none; stroke: #5b8dee; stroke-width: 0.75; opacity: 0.18; }
+    .brand-icon { opacity: 0.95; }
+    .supporting-star { fill: #475569; }
+    .anchor-text { font-family: 'Cascadia Code', 'Consolas', 'SF Mono', 'Fira Code', monospace; font-size: 13px; fill: #e2e8f0; font-weight: 600; letter-spacing: 2.5px; }
+    .primary-tech { font-family: 'Cascadia Code', 'Consolas', 'SF Mono', 'Fira Code', monospace; font-size: 10px; fill: #5b8dee; letter-spacing: 1px; opacity: 0.7; }
+    .supporting-text { font-family: 'Cascadia Code', 'Consolas', 'SF Mono', 'Fira Code', monospace; font-size: 10.5px; fill: #64748b; letter-spacing: 0.5px; }
+    .center-logo-circle { fill: #0f172a; stroke: #5b8dee; stroke-width: 1.5; }
+    .center-logo-inner { fill: none; stroke: #5b8dee; stroke-width: 0.5; opacity: 0.2; }
+    .center-middle-ring { fill: none; stroke: #1e293b; stroke-width: 0.5; opacity: 0.12; }
+    .center-void-ring { fill: none; stroke: #1e293b; stroke-width: 0.75; stroke-dasharray: 4 8; opacity: 0.3; }
+    .center-text { font-family: 'Cascadia Code', 'Consolas', 'SF Mono', 'Fira Code', monospace; font-size: 16px; fill: #5b8dee; font-weight: 600; text-anchor: middle; letter-spacing: 4px; }
+
+    /* Motion System - Graceful Degradation */
+    @media (prefers-reduced-motion: no-preference) {
+      /* Animation Classes */
+      .anim-breathe-core {
+        transform-box: fill-box;
+        transform-origin: center;
+        animation: breathe-core 10.5s ease-in-out infinite;
+      }
+      .anim-pulse-core { animation: pulse-core 6s ease-in-out infinite; }
+      .anim-pulse { animation: pulse 8.25s ease-in-out infinite; }
+      .anim-twinkle { animation: twinkle 7s ease-in-out infinite; }
+
+      /* Keyframes */
+      @keyframes breathe-core {
+        0%, 100% { transform: scale(1.0); }
+        50% { transform: scale(1.04); }
+      }
+      @keyframes pulse-core {
+        0%, 100% { opacity: 0.05; }
+        50% { opacity: 0.55; }
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 0.05; }
+        50% { opacity: 0.48; }
+      }
+      @keyframes twinkle {
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 0.7; }
+      }
+    }
+  </style>
+
+  <rect width="1600" height="800" fill="url(#bg-gradient)" />
+
+  <g id="center-logo">
+    <circle cx="800" cy="400" r="180" class="center-void-ring anim-breathe-core"  />
+    <circle cx="800" cy="400" r="120" class="center-middle-ring" />
+    <circle cx="800" cy="400" r="60" class="center-logo-circle" />
+    <circle cx="800" cy="400" r="56" class="center-logo-inner anim-pulse-core"  />
+    <text x="800" y="405" class="center-text">LOGO</text>
+  </g>
+
+  <g id="frontend">
+    <line x1="450" y1="220" x2="350" y2="160" class="connection"  />
+    <line x1="450" y1="220" x2="550" y2="170" class="connection"  />
+    <line x1="450" y1="220" x2="320" y2="290" class="connection"  />
+    <line x1="450" y1="220" x2="520" y2="310" class="connection"  />
+    <line x1="320" y1="290" x2="400" y2="340" class="connection"  />
+    <line x1="520" y1="310" x2="550" y2="170" class="connection"  />
+    
+    <circle cx="350" cy="160" r="2.5" class="supporting-star anim-twinkle" style="animation-duration: 6s; animation-delay: -1s;" />
+    <text x="362" y="164" class="supporting-text">Next.js</text>
+    <circle cx="550" cy="170" r="2.5" class="supporting-star anim-twinkle" style="animation-duration: 8s; animation-delay: -4s;" />
+    <text x="562" y="174" class="supporting-text">HTML5</text>
+    <circle cx="320" cy="290" r="2.5" class="supporting-star anim-twinkle" style="animation-duration: 7s; animation-delay: -2s;" />
+    <text x="332" y="294" class="supporting-text">Tailwind</text>
+    <circle cx="520" cy="310" r="2.5" class="supporting-star anim-twinkle" style="animation-duration: 9s; animation-delay: -6s;" />
+    <text x="532" y="314" class="supporting-text">CSS3</text>
+    <circle cx="400" cy="340" r="2.5" class="supporting-star anim-twinkle" style="animation-duration: 5s; animation-delay: -3s;" />
+    <text x="412" y="344" class="supporting-text">Axios</text>
+    
+    <circle cx="450" cy="220" r="18" class="anchor-halo anim-pulse"  />
+    <circle cx="450" cy="220" r="11" fill="#0f1628" />
+    <use href="#icon-react" x="441" y="211" width="18" height="18" class="brand-icon" />
+    <text x="478" y="212" class="anchor-text">FRONTEND</text>
+    <text x="478" y="230" class="primary-tech">[React]</text>
+  </g>
+
+  <g id="backend">
+    <line x1="1100" y1="220" x2="1020" y2="160" class="connection"  />
+    <line x1="1100" y1="220" x2="1180" y2="180" class="connection"  />
+    <line x1="1100" y1="220" x2="1050" y2="300" class="connection"  />
+    <line x1="1100" y1="220" x2="1170" y2="320" class="connection"  />
+    <line x1="1020" y1="160" x2="1050" y2="300" class="connection"  />
+    <line x1="1180" y1="180" x2="1170" y2="320" class="connection"  />
+    
+    <circle cx="1020" cy="160" r="2.5" class="supporting-star anim-twinkle" style="animation-duration: 8.5s; animation-delay: -2.5s;" />
+    <text x="1032" y="164" class="supporting-text">Express.js</text>
+    <circle cx="1180" cy="180" r="2.5" class="supporting-star anim-twinkle" style="animation-duration: 6.5s; animation-delay: -5s;" />
+    <text x="1192" y="184" class="supporting-text">REST API</text>
+    <circle cx="1050" cy="300" r="2.5" class="supporting-star anim-twinkle" style="animation-duration: 7.5s; animation-delay: -1.5s;" />
+    <text x="1062" y="304" class="supporting-text">JWT</text>
+    <circle cx="1170" cy="320" r="2.5" class="supporting-star anim-twinkle" style="animation-duration: 5.5s; animation-delay: -4.5s;" />
+    <text x="1182" y="324" class="supporting-text">bcrypt</text>
+    
+    <circle cx="1100" cy="220" r="18" class="anchor-halo anim-pulse" style="animation-delay: -3s;" />
+    <circle cx="1100" cy="220" r="11" fill="#0f1628" />
+    <use href="#icon-node" x="1091" y="211" width="18" height="18" class="brand-icon" />
+    <text x="1128" y="212" class="anchor-text">BACKEND</text>
+    <text x="1128" y="230" class="primary-tech">[Node.js]</text>
+  </g>
+
+  <g id="database">
+    <line x1="1250" y1="480" x2="1250" y2="580" class="connection"  />
+    
+    <circle cx="1250" cy="580" r="2.5" class="supporting-star anim-twinkle" style="animation-duration: 9.5s; animation-delay: -7s;" />
+    <text x="1262" y="584" class="supporting-text">MySQL</text>
+    
+    <circle cx="1250" cy="480" r="18" class="anchor-halo anim-pulse" style="animation-delay: -5s;" />
+    <circle cx="1250" cy="480" r="11" fill="#0f1628" />
+    <use href="#icon-postgres" x="1241" y="471" width="18" height="18" class="brand-icon" />
+    <text x="1278" y="472" class="anchor-text">DATABASE</text>
+    <text x="1278" y="490" class="primary-tech">[PostgreSQL]</text>
+  </g>
+
+  <g id="cloud">
+    <line x1="1400" y1="350" x2="1460" y2="250" class="connection"  />
+    <line x1="1400" y1="350" x2="1480" y2="450" class="connection"  />
+    <line x1="1480" y1="450" x2="1380" y2="530" class="connection"  />
+    <line x1="1380" y1="530" x2="1450" y2="620" class="connection"  />
+    
+    <circle cx="1460" cy="250" r="2.5" class="supporting-star anim-twinkle" style="animation-duration: 6s; animation-delay: -8s;" />
+    <text x="1472" y="254" class="supporting-text">Netlify</text>
+    <circle cx="1480" cy="450" r="2.5" class="supporting-star anim-twinkle" style="animation-duration: 7s; animation-delay: -3.5s;" />
+    <text x="1492" y="454" class="supporting-text">Railway</text>
+    <circle cx="1380" cy="530" r="2.5" class="supporting-star anim-twinkle" style="animation-duration: 8s; animation-delay: -1.2s;" />
+    <text x="1392" y="534" class="supporting-text">Render</text>
+    <circle cx="1450" cy="620" r="2.5" class="supporting-star anim-twinkle" style="animation-duration: 5s; animation-delay: -6.5s;" />
+    <text x="1462" y="624" class="supporting-text">Neon</text>
+    
+    <circle cx="1400" cy="350" r="18" class="anchor-halo anim-pulse" style="animation-delay: -7s;" />
+    <circle cx="1400" cy="350" r="11" fill="#0f1628" />
+    <use href="#icon-vercel" x="1391" y="340" width="18" height="18" class="brand-icon" />
+    <text x="1428" y="342" class="anchor-text">CLOUD &amp; DEPLOYMENT</text>
+    <text x="1428" y="360" class="primary-tech">[Vercel]</text>
+  </g>
+
+  <g id="languages">
+    <line x1="980" y1="650" x2="890" y2="720" class="connection"  />
+    <line x1="980" y1="650" x2="980" y2="750" class="connection"  />
+    <line x1="980" y1="650" x2="1070" y2="720" class="connection"  />
+    <line x1="980" y1="650" x2="1050" y2="580" class="connection"  />
+    
+    <circle cx="890" cy="720" r="2.5" class="supporting-star anim-twinkle" style="animation-duration: 8.2s; animation-delay: -4s;" />
+    <text x="902" y="724" class="supporting-text">C++</text>
+    <circle cx="980" cy="750" r="2.5" class="supporting-star anim-twinkle" style="animation-duration: 6.2s; animation-delay: -2s;" />
+    <text x="992" y="754" class="supporting-text">Python</text>
+    <circle cx="1070" cy="720" r="2.5" class="supporting-star anim-twinkle" style="animation-duration: 7.8s; animation-delay: -5.5s;" />
+    <text x="1082" y="724" class="supporting-text">JavaScript</text>
+    <circle cx="1050" cy="580" r="2.5" class="supporting-star anim-twinkle" style="animation-duration: 5.8s; animation-delay: -3s;" />
+    <text x="1062" y="584" class="supporting-text">TypeScript</text>
+    
+    <circle cx="980" cy="650" r="18" class="anchor-halo anim-pulse" style="animation-delay: -9s;" />
+    <circle cx="980" cy="650" r="11" fill="#0f1628" />
+    <use href="#icon-java" x="971" y="641" width="18" height="18" class="brand-icon" />
+    <text x="1008" y="642" class="anchor-text">LANGUAGES</text>
+    <text x="1008" y="660" class="primary-tech">[Java]</text>
+  </g>
+
+  <g id="devtools">
+    <line x1="600" y1="650" x2="500" y2="650" class="connection"  />
+    <line x1="500" y1="650" x2="500" y2="730" class="connection"  />
+    <line x1="500" y1="730" x2="600" y2="730" class="connection"  />
+    <line x1="600" y1="730" x2="600" y2="650" class="connection"  />
+    
+    <circle cx="500" cy="650" r="2.5" class="supporting-star anim-twinkle" style="animation-duration: 9.2s; animation-delay: -8s;" />
+    <text x="512" y="654" class="supporting-text">GitHub</text>
+    <circle cx="500" cy="730" r="2.5" class="supporting-star anim-twinkle" style="animation-duration: 6.8s; animation-delay: -1s;" />
+    <text x="512" y="734" class="supporting-text">VS Code</text>
+    <circle cx="600" cy="730" r="2.5" class="supporting-star anim-twinkle" style="animation-duration: 7.2s; animation-delay: -4.2s;" />
+    <text x="612" y="734" class="supporting-text">npm</text>
+    
+    <circle cx="600" cy="650" r="18" class="anchor-halo anim-pulse" style="animation-delay: -2s;" />
+    <circle cx="600" cy="650" r="11" fill="#0f1628" />
+    <use href="#icon-git" x="591" y="641" width="18" height="18" class="brand-icon" />
+    <text x="628" y="642" class="anchor-text">DEV TOOLS</text>
+    <text x="628" y="660" class="primary-tech">[Git]</text>
+  </g>
+
+  <g id="aiml">
+    <line x1="250" y1="480" x2="180" y2="400" class="connection"  />
+    <line x1="250" y1="480" x2="160" y2="550" class="connection"  />
+    <line x1="250" y1="480" x2="100" y2="470" class="connection"  />
+    
+    <circle cx="180" cy="400" r="2.5" class="supporting-star anim-twinkle" style="animation-duration: 8.6s; animation-delay: -6.2s;" />
+    <text x="192" y="404" class="supporting-text">NumPy</text>
+    <circle cx="160" cy="550" r="2.5" class="supporting-star anim-twinkle" style="animation-duration: 5.4s; animation-delay: -2.8s;" />
+    <text x="172" y="554" class="supporting-text">Pandas</text>
+    <circle cx="100" cy="470" r="2.5" class="supporting-star anim-twinkle" style="animation-duration: 7.4s; animation-delay: -5s;" />
+    <text x="112" y="474" class="supporting-text">Scikit-learn</text>
+    
+    <circle cx="250" cy="480" r="18" class="anchor-halo anim-pulse" style="animation-delay: -4s;" />
+    <circle cx="250" cy="480" r="11" fill="#0f1628" />
+    <use href="#icon-python" x="241" y="471" width="18" height="18" class="brand-icon" />
+    <text x="278" y="472" class="anchor-text">AI / ML</text>
+    <text x="278" y="490" class="primary-tech">[Python]</text>
+  </g>
+</svg>
+
+
+
+
