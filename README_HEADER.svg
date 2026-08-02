@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" role="img" aria-label="Aman Chapadiya, Software Developer. Powered by Curiosity, Driven by Impact.">
+  <!-- === DEFINITIONS === -->
+  <defs>
+    <!-- Texture Filter (Monochrome Fractal Noise - Production Safe) -->
+    <filter id="ac-header-filter-noise" x="-20%" y="-20%" width="140%" height="140%" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" result="noise" />
+      <feColorMatrix type="matrix" values="0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 0.025 0" in="noise" result="monoNoise" />
+    </filter>
+
+    <!-- Primary Ambient Wash Gradient -->
+    <radialGradient id="ac-header-grad-ambient" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#141418" />
+      <stop offset="100%" stop-color="#000000" />
+    </radialGradient>
+
+    <!-- Accent Illumination Gradient (Warm Gold at Logo Epicenter Y=158) -->
+    <radialGradient id="ac-header-grad-accent" cx="50%" cy="26.3%" r="28%">
+      <stop offset="0%" stop-color="#DCB46E" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#DCB46E" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Core Luminescence Gradient (Cool White behind Name Y=300) -->
+    <radialGradient id="ac-header-grad-core" cx="50%" cy="50%" r="40%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.05" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- === LAYER 4: ATMOSPHERIC DEPTH === -->
+  <!-- 1. Base Material (Matte Obsidian) -->
+  <rect id="ac-header-layer-01-base" width="1200" height="600" fill="#0A0A0C" />
+
+  <!-- 2. Surface Texture -->
+  <rect id="ac-header-layer-02-texture" width="1200" height="600" fill="transparent" filter="url(#ac-header-filter-noise)" />
+
+  <!-- 3. Primary Ambient -->
+  <rect id="ac-header-layer-03-ambient" width="1200" height="600" fill="url(#ac-header-grad-ambient)" />
+
+  <!-- === LAYER 3: STRUCTURAL ENVIRONMENT === -->
+  <!-- 4. Razor-Sharp Architectural Drafting (The Engineering Schematic) -->
+  <g id="ac-header-layer-04-geometry" stroke="#FFFFFF" stroke-width="0.5" fill="none">
+    
+    <!-- Optical Lensing (Sweeping Rings from absolute Name center X=600, Y=300) -->
+    <g stroke-opacity="0.015">
+      <circle cx="600" cy="300" r="200" />
+      <circle cx="600" cy="300" r="400" />
+      <circle cx="600" cy="300" r="600" />
+      <circle cx="600" cy="300" r="800" />
+      <circle cx="600" cy="300" r="1000" />
+    </g>
+
+    <!-- Architectural Structure (Cartesian Grid) -->
+    <!-- The Primary Crosshair (Anchoring the Name and Vertical Hierarchy) -->
+    <line x1="600" y1="0" x2="600" y2="600" stroke-opacity="0.04" />
+    <line x1="0" y1="300" x2="1200" y2="300" stroke-opacity="0.04" />
+
+    <!-- The Secondary Cartesian Frame (Structural Margins widened to X=200 and X=1000) -->
+    <g stroke-opacity="0.02">
+      <line x1="200" y1="0" x2="200" y2="600" />
+      <line x1="1000" y1="0" x2="1000" y2="600" />
+      
+      <!-- Identity Baselines -->
+      <!-- Logo Baseline Axis (Y=158) -->
+      <line x1="200" y1="158" x2="1000" y2="158" stroke-dasharray="2 8" />
+      <!-- Role Baseline Axis (Y=426) -->
+      <line x1="300" y1="426" x2="900" y2="426" stroke-dasharray="2 8" />
+    </g>
+
+    <!-- Precision Registration Marks (Craftsmanship Signature) -->
+    <g stroke-opacity="0.06">
+      <!-- Left Name Intersection -->
+      <path d="M 195 300 L 205 300 M 200 295 L 200 305" />
+      <!-- Right Name Intersection -->
+      <path d="M 995 300 L 1005 300 M 1000 295 L 1000 305" />
+    </g>
+  </g>
+
+  <!-- === LAYER 2: SUPPORTING LIGHTING === -->
+  <!-- 5. Sculpted Lighting Layers -->
+  <g id="ac-header-layer-05-lights">
+    <!-- Warm Epicenter Glow (Illuminating the Logo Y=158) -->
+    <rect width="1200" height="600" fill="url(#ac-header-grad-accent)" />
+    <!-- Cool Typography Core (Illuminating the Name Y=300) -->
+    <rect width="1200" height="600" fill="url(#ac-header-grad-core)" />
+  </g>
+
+  <!-- === LAYER 1: IDENTITY LOCKUP (HERO) === -->
+  <!-- 6. Original Approved AC Monogram (Apex Anchor) -->
+  <!-- Scaled to a monumental 108px to guarantee iconic visibility in GitHub viewport -->
+  <!-- Centered flawlessly at Y=158 -->
+  <g id="ac-header-layer-06-logo" transform="translate(600, 158)">
+    <g transform="scale(0.21) translate(-256, -256)" fill="none" stroke="#F5F5FA" stroke-miterlimit="10">
+      <path stroke-width="40" stroke-linejoin="miter" d="M369.137 142.863A160 160 0 1 0 369.137 369.137"/>
+      <path stroke-width="40" stroke-linejoin="bevel" d="M150 369.137L256 100l106 269.137"/>
+      <path stroke-width="34" stroke-linejoin="miter" d="M193 260h126"/>
+    </g>
+  </g>
+
+  <!-- 7. Typography Hierarchy -->
+  <!-- Structured using a monumental 378px footprint (63% of canvas) -->
+  <!-- text-rendering set to optimizeLegibility for absolute kerning precision -->
+  <g id="ac-header-layer-07-typography" 
+     font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', 'SF Pro Display', Roboto, Helvetica, Arial, sans-serif" 
+     text-anchor="middle" 
+     dominant-baseline="middle"
+     text-rendering="optimizeLegibility">
+     
+    <!-- Name (Level 1) - Monumental 96px Scale, anchored to precise optical center Y=300 -->
+    <text x="599" y="300" font-size="96" font-weight="600" fill="#F5F5FA" letter-spacing="-0.03em">Aman Chapadiya</text>
+
+    <!-- Role (Level 2) -->
+    <text x="600" y="426" font-size="28" font-weight="400" fill="#A0A0A5" letter-spacing="0.1em">Software Developer</text>
+
+    <!-- Tagline (Level 3) -->
+    <text x="600" y="471" font-size="22" font-weight="400" font-style="italic" fill="#DCB46E" letter-spacing="0.02em">Powered by Curiosity, Driven by Impact.</text>
+  </g>
+
+  <!-- === MOTION LAYER (RESERVED) === -->
+  <!-- 8. Reserved for future ambient CSS/SMIL animations -->
+  <g id="ac-header-layer-08-motion-overlay">
+  </g>
+
+</svg>
