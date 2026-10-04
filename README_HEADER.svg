@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 340" preserveAspectRatio="xMidYMid meet" width="100%" height="100%" role="img" aria-label="Aman Chapadiya, Software Developer. Powered by Curiosity, Driven by Impact.">
+  <!-- === DEFINITIONS === -->
+  <defs>
+    <!-- Texture Filter (Monochrome Fractal Noise - Production Safe) -->
+    <filter id="ac-header-filter-noise" x="-20%" y="-20%" width="140%" height="140%" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3" result="noise" />
+      <feColorMatrix type="matrix" values="0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0.33 0.33 0.33 0 0  0 0 0 0.025 0" in="noise" result="monoNoise" />
+    </filter>
+
+    <!-- Primary Ambient Wash Gradient -->
+    <radialGradient id="ac-header-grad-ambient" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#141418" />
+      <stop offset="100%" stop-color="#000000" />
+    </radialGradient>
+
+    <!-- Accent Illumination Gradient (Warm Gold at Logo Epicenter Y=95) -->
+    <radialGradient id="ac-header-grad-accent" cx="50%" cy="28%" r="38%">
+      <stop offset="0%" stop-color="#DCB46E" stop-opacity="0.13" />
+      <stop offset="100%" stop-color="#DCB46E" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Core Luminescence Gradient (Cool White behind Name Y=190) -->
+    <radialGradient id="ac-header-grad-core" cx="50%" cy="56%" r="55%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.075" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- === LAYER 4: ATMOSPHERIC DEPTH === -->
+  <!-- 1. Base Material (Matte Obsidian) -->
+  <rect id="ac-header-layer-01-base" width="960" height="340" fill="#0A0A0C" />
+
+  <!-- 2. Surface Texture -->
+  <rect id="ac-header-layer-02-texture" width="960" height="340" fill="transparent" filter="url(#ac-header-filter-noise)" />
+
+  <!-- 3. Primary Ambient -->
+  <rect id="ac-header-layer-03-ambient" width="960" height="340" fill="url(#ac-header-grad-ambient)" />
+
+  <!-- === LAYER 3: STRUCTURAL ENVIRONMENT === -->
+  <!-- 4. Razor-Sharp Architectural Drafting (The Engineering Schematic) -->
+  <g id="ac-header-layer-04-geometry" stroke="#FFFFFF" stroke-width="0.5" fill="none">
+    
+    <!-- Optical Lensing (Sweeping Rings from absolute Name center X=480, Y=190) -->
+    <!-- Opacity reduced to quiet the peripheral geometry -->
+    <g stroke-opacity="0.015">
+      <circle cx="480" cy="190" r="140" />
+      <circle cx="480" cy="190" r="280" />
+      <circle cx="480" cy="190" r="420" />
+      <circle cx="480" cy="190" r="560" />
+      <circle cx="480" cy="190" r="700" />
+    </g>
+
+    <!-- Architectural Structure (Cartesian Grid) -->
+    <!-- The Primary Crosshair (Anchoring the Name and Vertical Hierarchy) -->
+    <line x1="480" y1="0" x2="480" y2="340" stroke-opacity="0.04" />
+    <line x1="0" y1="190" x2="960" y2="190" stroke-opacity="0.04" />
+
+    <!-- The Secondary Cartesian Frame (Mapped precisely to the physical boundaries of the Identity Lockup) -->
+    <g stroke-opacity="0.02">
+      <!-- Vertical Bounds (Perfectly bracketing the Name Width) -->
+      <line x1="180" y1="0" x2="180" y2="340" />
+      <line x1="780" y1="0" x2="780" y2="340" />
+      
+      <!-- Horizontal Bounds (Capping the absolute top of Logo and bottom of Tagline) -->
+      <!-- Top of Logo Crest (Y=50) -->
+      <line x1="180" y1="50" x2="780" y2="50" stroke-dasharray="2 6" />
+      <!-- Bottom of Tagline (Y=290) -->
+      <line x1="180" y1="290" x2="780" y2="290" stroke-dasharray="2 6" />
+    </g>
+
+    <!-- Precision Registration Marks (Craftsmanship Signature) -->
+    <g stroke-opacity="0.05">
+      <!-- Left Name Intersection -->
+      <path d="M 175 190 L 185 190 M 180 185 L 180 195" />
+      <!-- Right Name Intersection -->
+      <path d="M 775 190 L 785 190 M 780 185 L 780 195" />
+    </g>
+  </g>
+
+  <!-- === LAYER 3.5: PREMIUM CONTAINMENT FRAME === -->
+  <!-- Subtle, intentional boundary to finalize the lockup without overpowering content -->
+  <g id="ac-header-layer-04-5-frame">
+    <rect x="18" y="18" width="924" height="304" rx="12" fill="none" stroke="#F5F5FA" stroke-opacity="0.10" stroke-width="1.2" />
+  </g>
+
+  <!-- === LAYER 2: SUPPORTING LIGHTING === -->
+  <!-- 5. Sculpted Lighting Layers -->
+  <g id="ac-header-layer-05-lights">
+    <!-- Warm Epicenter Glow (Illuminating the Logo Y=95) -->
+    <rect width="960" height="340" fill="url(#ac-header-grad-accent)" />
+    <!-- Cool Typography Core (Illuminating the Name Y=190) -->
+    <rect width="960" height="340" fill="url(#ac-header-grad-core)" />
+  </g>
+
+  <!-- === LAYER 1: IDENTITY LOCKUP (HERO) === -->
+  <!-- 6. Original Approved AC Monogram (Apex Anchor) -->
+  <g id="ac-header-layer-06-logo" transform="translate(480, 95)">
+    <g transform="scale(0.175) translate(-256, -256)" fill="none" stroke="#F5F5FA" stroke-miterlimit="10">
+      <path stroke-width="40" stroke-linejoin="miter" d="M369.137 142.863A160 160 0 1 0 369.137 369.137"/>
+      <path stroke-width="40" stroke-linejoin="bevel" d="M150 369.137L256 100l106 269.137"/>
+      <path stroke-width="34" stroke-linejoin="miter" d="M193 260h126"/>
+    </g>
+  </g>
+
+  <!-- 7. Typography Hierarchy -->
+  <!-- Compressed vertical rhythm forces the lines into ONE precision-engineered object -->
+  <g id="ac-header-layer-07-typography" 
+     font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', 'SF Pro Display', Roboto, Helvetica, Arial, sans-serif" 
+     text-anchor="middle" 
+     dominant-baseline="middle"
+     text-rendering="optimizeLegibility">
+     
+    <!-- Name (The Dial) - Refined to 78px for sophisticated dominance, optical-centered at Y=190 -->
+    <text x="479" y="190" font-size="78" font-weight="600" fill="#F5F5FA" letter-spacing="-0.03em">Aman Chapadiya</text>
+
+    <!-- Role (The Engraved Specification) - Refined to 23px, tracking 0.08em for stronger hierarchy -->
+    <text x="480" y="248" font-size="23" font-weight="500" fill="#A0A0A5" letter-spacing="0.08em">Software Developer</text>
+
+    <!-- Tagline (The Maker's Signature) - Separated by 33px for distinct signature hierarchy -->
+    <text x="480" y="281" font-size="18" font-weight="400" font-style="italic" fill="#DCB46E" letter-spacing="0.02em">Powered by Curiosity, Driven by Impact.</text>
+  </g>
+
+  <!-- === MOTION LAYER (RESERVED) === -->
+  <g id="ac-header-layer-08-motion-overlay">
+  </g>
+
+</svg>
